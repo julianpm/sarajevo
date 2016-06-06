@@ -1,0 +1,24 @@
+
+// FEATURES SECTION
+
+.features-upper{
+	background: $grey;
+}
+
+.features-details{
+	img{
+		height:100%;
+		margin-right:5%;
+	}
+}
+
+.features-lower{
+	.features-details{
+		.flex{
+			transition:0.5s;
+			&:hover{
+				background: $yellow;
+			}
+		}
+	}
+}

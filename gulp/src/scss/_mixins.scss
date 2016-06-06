@@ -1,0 +1,20 @@
+
+// BREAKPOINTS
+@mixin breakpoint($breakpoint) {
+  
+  $breakpoint-large: "(min-width: 64em)";
+  $breakpoint-medium: "(min-width: 40em)";
+
+  @if $breakpoint == large {
+    @media screen and #{$breakpoint-large} { @content; }
+  }
+  @else if $breakpoint == medium {
+    @media screen and #{$breakpoint-medium} { @content; }
+  }
+}
+
+//FONT SIZE
+@mixin font-size($number){
+	font-size:$number * 1px;
+	font-size:($number / 10) * 1rem; 
+}

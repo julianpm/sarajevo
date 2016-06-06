@@ -1,0 +1,66 @@
+
+// MAIN STYLES
+
+@import 'foundation';
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'features';
+@import 'work';
+@import 'contact';
+@import 'footer';
+
+
+.text-center{
+	text-align:center;
+}
+
+.flex{
+	display:flex;
+}
+
+.wrap{
+	flex-wrap:wrap;
+}
+
+.section-padding{
+	padding:5% 0;
+}
+
+section{
+	border:1px solid red;
+}
+
+h2, h3{
+	color:$blue;
+}
+
+h4{
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+}
+
+img{
+	margin:0 auto;
+	display: block;
+}
+
+nav{
+	ul{
+		padding:0;
+		margin:0;
+		justify-content:space-between;
+		li{
+			list-style:none;
+		}
+	}
+}
+
+
+
+
+
+
