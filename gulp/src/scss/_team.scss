@@ -1,0 +1,22 @@
+
+.team-member{
+	border:1px solid red;
+	position:relative;
+}
+
+.team-member-inner{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background: rgba(76, 118, 255, 0.7);
+	border:1px solid black;
+	color:white;
+	// flex-direction:columns;
+	a{
+		color:white;
+		background: rgba(0,0,0,0.2);
+		padding:10px;
+	}
+}

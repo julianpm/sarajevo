@@ -7,6 +7,7 @@
 @import 'header';
 @import 'features';
 @import 'work';
+@import 'team';
 @import 'contact';
 @import 'footer';
 
@@ -33,6 +34,7 @@ section{
 
 h2, h3{
 	color:$blue;
+	margin-top:0;
 }
 
 h4{
@@ -48,17 +50,14 @@ img{
 	display: block;
 }
 
-nav{
-	ul{
-		padding:0;
-		margin:0;
-		justify-content:space-between;
-		li{
-			list-style:none;
-		}
+ul{
+	padding:0;
+	margin:0;
+	justify-content:space-between;
+	li{
+		list-style:none;
 	}
 }
-
 
 
 
