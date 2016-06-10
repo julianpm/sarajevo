@@ -4,12 +4,12 @@
 @import 'foundation';
 @import 'variables';
 @import 'mixins';
-@import 'header';
+@import 'navigation';
 @import 'features';
 @import 'work';
 @import 'team';
+@import 'funfacts';
 @import 'contact';
-@import 'footer';
 
 
 .text-center{
@@ -28,8 +28,19 @@
 	padding:5% 0;
 }
 
+.section-header{
+	margin-bottom:$gutter * 2;
+	p{
+		margin-top:$gutter * 1.5;
+	}
+}
+
 section{
 	border:1px solid red;
+}
+
+header{
+	background: rgba(76, 118, 255, 0.1);
 }
 
 h2, h3{
@@ -59,7 +70,33 @@ ul{
 	}
 }
 
+.hero{
+	height:700px;
+}
 
+.bg-image{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+footer{
+	background: $black;
+	color:white;
+	a{
+		color:white;
+		transition:0.5s;
+		&:hover{
+			color:$blue;
+		}
+	}
+}
+
+.link-list{
+	@include breakpoint(large){
+		column-count:2;
+	}
+}
 
 
 

@@ -1,26 +1,12 @@
 
 // HEADER SECTION
 
-// CONSOLIDATED CODE
-
-.header-logo, .header-bar-inner{
+.header-logo, .header-inner{
 	justify-content:space-between;
 }
 
 .header-logo p, .header-nav a{
 	padding:20px 0 10px 0;
-}
-
-
-.header{
-	height:700px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-
-.header-bar{
-	background: rgba(76, 118, 255, 0.1);
 }
 
 .header-logo{
