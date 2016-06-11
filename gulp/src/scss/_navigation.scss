@@ -21,10 +21,10 @@
 	a{
 		color:white;
 		display: block;
-		border-top:2px solid transparent;
+		border-top:3px solid transparent;
 		transition:0.5s;
 		&:hover{
-			border-top:2px solid $blue;
+			border-top:3px solid $blue;
 		}
 	}
 }

@@ -1,4 +1,13 @@
 
+.contact-wrapper{
+	width: 100%;
+}
+
+.contact-form{
+	flex-direction:column;
+	justify-content:space-between;
+}
+
 form{
 	flex-wrap:wrap;
 	justify-content:space-between;
@@ -21,7 +30,6 @@ form{
 		width: 140px;
 		padding:3px;
 		justify-content:space-between;
-		// align-self:flex-end;
 		margin-left:auto;
 		i{
 			color:$blue;
@@ -31,6 +39,7 @@ form{
 
 .contact-social{
 	flex-direction:column;
+	justify-content:space-between;
 	i{
 		margin-bottom:$gutter / 2;
 	}

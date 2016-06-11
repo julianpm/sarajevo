@@ -27,3 +27,29 @@
 		}
 	}
 }
+
+.work-pieces{
+	flex-wrap:wrap;
+	div{
+		width: 25%;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.work-pieces-inner{
+	background: $blue;
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+}
+
+
+
+
+
+
