@@ -5,5 +5,18 @@
 }
 
 .fun-facts-header{
-	margin-top:5%;
+	margin:5% 0 2.5% 0;
+}
+
+.fun-facts-item{
+	div{
+		border:1px solid white;
+		height: 90px;
+		width: 90px;
+		margin:0 auto;
+		border-radius:50%;
+		img{
+			align-self:center;
+		}
+	}
 }

@@ -1,4 +1,41 @@
 
+form{
+	flex-wrap:wrap;
+	justify-content:space-between;
+	input{
+		border-top:0;
+		border-left:0;
+		border-right:0;
+	}
+	input:first-of-type{
+		width: 48%;
+	}
+	input:nth-of-type(2){
+		width: 48%;
+	}
+	input:nth-of-type(3){
+		width: 100%;
+	}
+	button{
+		border:1px solid black;
+		width: 140px;
+		padding:3px;
+		justify-content:space-between;
+		// align-self:flex-end;
+		margin-left:auto;
+		i{
+			color:$blue;
+		}
+	}
+}
+
+.contact-social{
+	flex-direction:column;
+	i{
+		margin-bottom:$gutter / 2;
+	}
+}
+
 .map{
 	width: 100%;
 }

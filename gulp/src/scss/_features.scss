@@ -13,9 +13,18 @@
 }
 
 .features-lower{
+	.features-lower-header{
+		margin-bottom:$gutter * 2.5;
+	}
 	.features-details{
+		flex-direction:column;
+		justify-content:space-between;
+		padding:5% 0;
 		.flex{
 			transition:0.5s;
+			img{
+				margin-right:12%;
+			}
 			&:hover{
 				background: $yellow;
 			}
