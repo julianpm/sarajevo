@@ -17,18 +17,27 @@
 		color:white;
 		display:flex;
 		flex-direction:column;
-		justify-content:space-between;
+		justify-content:center;
 		padding:10px;
+		@include breakpoint(large){
+			justify-content:space-between;
+		}
 		.team-member-title{
 			p:last-of-type{
-				margin:0;
+				margin:$gutter;
+				@include breakpoint(large){
+					margin:0;
+				}
 			}
 		}
 		.team-member-social{
 			margin:0 auto;
-			width: 70%;
+			width: 50%;
 			display:flex;
 			justify-content:space-between;
+			@include breakpoint(large){
+				width: 70%;
+			}
 			a{
 				color:white;
 				background: rgba(0,0,0,0.2);
@@ -48,5 +57,10 @@
 			color:$green;
 		}
 	}
+}
+
+.team-member-name{
+	color:$header-black;
+	font-weight:bold;
 }
 

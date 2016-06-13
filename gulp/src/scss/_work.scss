@@ -1,8 +1,12 @@
 
 // WORK SECTION
 
+.work{
+	padding-top:$gutter * 2;
+}
+
 .work-nav{
-	width: 80%;
+	width: 65%;
 	margin:0 auto;
 	ul{
 		font-weight:bold;
@@ -15,7 +19,7 @@
 				}
 			}
 			a{
-				color:black;
+				color:#062033;
 				padding:5px 15px;
 				border-radius:5px;
 				transition:0.5s;
@@ -29,23 +33,59 @@
 }
 
 .work-pieces{
-	flex-wrap:wrap;
-	div{
-		width: 25%;
-		img{
-			width: 100%;
-			height: auto;
-		}
+	margin-top:$gutter * 2;
+	@include breakpoint(medium){
+		display:flex;
+		flex-wrap:wrap;
 	}
 }
 
-.work-pieces-inner{
-	background: $blue;
-	position:absolute;
-	top:0;
-	bottom:0;
-	right:0;
-	left:0;
+.work-pieces-single{
+	position:relative;
+	width: 100%;
+	img{
+		// width: 100%;
+	}
+	.work-pieces-single-inner{
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background: $blue;
+		transition:0.5s;
+		opacity:0;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+		color:white;
+		text-align:center;
+		i{
+			@include font-size(16);
+			border:1px solid white;
+			padding:10px;
+			border-radius:50%;
+		}
+		p{
+			width: 90%;
+		}
+	}
+	&:hover{
+		.work-pieces-single-inner{
+			opacity:1;
+		}
+	}
+	@include breakpoint(medium){
+		width: 50%;
+		display:flex;
+		img{
+			height:100%;
+		}
+	}
+	@include breakpoint(large){
+		width: 25%;
+	}
 }
 
 

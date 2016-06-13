@@ -1,0 +1,31 @@
+
+.hero{
+	height:100vh;
+	flex-direction:column;
+}
+
+.hero-content{
+	border:1px solid red;
+	color:white;
+	span{
+		color:$blue;
+	}
+	p{
+		@include lato();
+		@include font-size(12);
+		margin-bottom:0;
+	}
+}
+
+.hero-wrapper{
+	border:2px solid blue;
+	height: 100%;
+	align-items:center;
+	justify-content:center;
+}
+
+.bg-image{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}

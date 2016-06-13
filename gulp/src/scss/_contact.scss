@@ -6,6 +6,9 @@
 .contact-form{
 	flex-direction:column;
 	justify-content:space-between;
+	p{
+		color:$header-black;
+	}
 }
 
 form{
@@ -15,6 +18,8 @@ form{
 		border-top:0;
 		border-left:0;
 		border-right:0;
+		border-bottom:2px solid #e0e0e0;
+		padding-bottom:15px;
 	}
 	input:first-of-type{
 		width: 48%;
@@ -24,24 +29,39 @@ form{
 	}
 	input:nth-of-type(3){
 		width: 100%;
+		margin-top:$gutter;
 	}
 	button{
-		border:1px solid black;
+		color:$header-black;
 		width: 140px;
 		padding:3px;
 		justify-content:space-between;
 		margin-left:auto;
+		margin-top:$gutter;
 		i{
 			color:$blue;
 		}
+	}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  // color: pink;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  // color: pink;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  // color: pink;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  // color: pink;
 	}
 }
 
 .contact-social{
 	flex-direction:column;
-	justify-content:space-between;
 	i{
 		margin-bottom:$gutter / 2;
+		color:$light-grey;
+		@include font-size(16);
 	}
 }
 

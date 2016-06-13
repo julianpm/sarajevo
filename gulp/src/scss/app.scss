@@ -4,7 +4,9 @@
 @import 'foundation';
 @import 'variables';
 @import 'mixins';
+@import 'typography';
 @import 'navigation';
+@import 'hero';
 @import 'features';
 @import 'work';
 @import 'team';
@@ -33,6 +35,10 @@
 	p{
 		margin-top:$gutter * 1.5;
 	}
+	img{
+		margin:0 auto;
+		display: block;
+	}
 }
 
 section{
@@ -41,51 +47,6 @@ section{
 
 header{
 	background: rgba(76, 118, 255, 0.1);
-}
-
-h2{
-	color:$blue;
-	margin-top:0;
-}
-
-h3{
-	margin:0;
-}
-
-a{
-	text-decoration:none;
-}
-
-img{
-	margin:0 auto;
-	display: block;
-}
-
-ul{
-	padding:0;
-	margin:0;
-	justify-content:space-between;
-	li{
-		list-style:none;
-	}
-}
-
-.hero{
-	height:100vh;
-	flex-direction:column;
-}
-
-.hero-wrapper{
-	border:2px solid blue;
-	height: 100%;
-	align-items:center;
-	justify-content:center;
-}
-
-.bg-image{
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
 }
 
 footer{
