@@ -62,5 +62,10 @@
 .team-member-name{
 	color:$header-black;
 	font-weight:bold;
+	margin-bottom:0;
 }
 
+.team-member-position{
+	margin:5px 0 0 0;
+	@include font-size(12);
+}

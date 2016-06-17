@@ -34,6 +34,7 @@
 	margin-bottom:$gutter * 2;
 	p{
 		margin-top:$gutter * 1.5;
+		@include lato();
 	}
 	img{
 		margin:0 auto;

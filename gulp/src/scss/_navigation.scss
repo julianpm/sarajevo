@@ -18,6 +18,9 @@
 
 .header-nav{
 	width: 40%;
+	li{
+		@include lato();
+	}
 	a{
 		color:white;
 		display: block;

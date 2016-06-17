@@ -1,6 +1,7 @@
 
 .fun-facts{
 	color:white;
+	padding:10% 0;
 }
 
 .fun-facts-header{
@@ -14,13 +15,25 @@
 .fun-facts-item{
 	div{
 		border:1px solid white;
-		height: 90px;
-		width: 90px;
+		height: 100px;
+		width: 100px;
 		margin:0 auto;
 		border-radius:50%;
 		justify-content:center;
 		img{
 			align-self:center;
+		}
+	}
+	p{
+		font-weight:bold;
+		&:first-of-type{
+			@include font-size(44);
+			margin:$gutter / 2 0 0 0;
+			letter-spacing:1px;
+		}
+		&:last-of-type{
+			margin:0;
+			@include font-size(14);
 		}
 	}
 }
