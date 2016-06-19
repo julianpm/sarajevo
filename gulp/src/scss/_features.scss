@@ -9,6 +9,12 @@
 	img{
 		height:100%;
 	}
+	.flex{
+		margin-bottom:$gutter;
+		&:last-of-type{
+			margin-bottom:0;
+		}
+	}
 }
 
 .features-upper{
@@ -36,15 +42,11 @@
 		padding:5% 0;
 		.flex{
 			transition:0.5s;
-			margin-bottom:$gutter;
 			img{
 				margin-right:12%;
 			}
 			&:hover{
 				background: $yellow;
-			}
-			@include breakpoint(large){
-				// margin-bottom:$gutter;
 			}
 		}
 	}

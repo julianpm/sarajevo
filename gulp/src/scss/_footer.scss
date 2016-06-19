@@ -1,0 +1,33 @@
+
+.footer-left, .footer-middle, .footer-right{
+	border:1px solid red;
+}
+
+.footer-left{
+	p:last-of-type{
+		@include lato();
+		@include font-size(14);
+		line-height:25px;
+	}
+}
+
+.footer-header{
+	margin-top:0;
+	@include lato-bold();
+	@include font-size(20);
+}
+
+.footer-logo{
+	@include lato-bold();
+	@include font-size(30);
+	margin:0;
+}
+
+.link-list{
+	column-count:2;
+	@include font-size(14);
+	font-weight:bold;
+	li{
+		margin-bottom:$gutter / 2;
+	}
+}

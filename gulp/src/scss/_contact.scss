@@ -1,6 +1,34 @@
 
 .contact-wrapper{
 	width: 100%;
+	display:flex;
+	flex-direction:column;
+	@include breakpoint(large){
+		flex-direction: row;
+	}
+}
+
+.contact-form-address, .contact-form{
+	margin-bottom:$gutter;
+	@include breakpoint(large){
+		margin-bottom:0;
+	}
+}
+
+.contact-form-address-header{
+	color:$black;
+	@include font-size(20);
+	margin-top:0;
+}
+
+.contact-form-address-inner{
+	p{
+		margin:0 0 5px 0;
+		@include font-size(14);
+		&:last-of-type{
+			margin:0;
+		}
+	}
 }
 
 .contact-form{
@@ -8,12 +36,17 @@
 	justify-content:space-between;
 	p{
 		color:$header-black;
+		font-weight:bold;
+		margin-top:0;
+		@include font-size(20);
 	}
 }
 
 form{
 	flex-wrap:wrap;
-	justify-content:space-between;
+	@include breakpoint(large){
+		justify-content:space-between;
+	}
 	input{
 		border-top:0;
 		border-left:0;
@@ -22,10 +55,18 @@ form{
 		padding-bottom:15px;
 	}
 	input:first-of-type{
-		width: 48%;
+		width: 100%;
+		@include breakpoint(large){
+			width: 48%;
+		}
 	}
 	input:nth-of-type(2){
-		width: 48%;
+		margin-top:$gutter;
+		width: 100%;
+		@include breakpoint(large){
+			width: 48%;
+			margin-top:0;
+		}
 	}
 	input:nth-of-type(3){
 		width: 100%;
@@ -43,25 +84,36 @@ form{
 		}
 	}
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	  // color: pink;
+	  @include font-size(12);
 	}
 	::-moz-placeholder { /* Firefox 19+ */
-	  // color: pink;
+		@include font-size(12);
 	}
 	:-ms-input-placeholder { /* IE 10+ */
-	  // color: pink;
+		@include font-size(12);
 	}
 	:-moz-placeholder { /* Firefox 18- */
-	  // color: pink;
+		@include font-size(12);
 	}
 }
 
 .contact-social{
-	flex-direction:column;
-	i{
-		margin-bottom:$gutter / 2;
+	justify-content:space-between;
+	@include breakpoint(large){
+		flex-direction:column;
+	}
+	a{
+		margin-bottom:$gutter / 3.5;
+		padding:2px 0 2px 5px;
 		color:$light-grey;
-		@include font-size(16);
+		@include font-size(20);
+		transition:0.5s;
+		&:last-of-type{
+			margin-bottom:0;
+		}
+		&:hover{
+			color:$black;
+		}
 	}
 }
 

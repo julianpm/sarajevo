@@ -1,52 +1,20 @@
 
+.team-member-wrapper{
+	border:1px solid red;
+	margin:0 0 $gutter 0;
+	&:last-of-type{
+		margin:0;
+	}
+}
+
 .team-member{
+	border:1px solid orange;
 	position:relative;
+	width: 80%;
+	margin:0 auto;
 	img{
 		height:100%;
 		width: 100%;
-	}
-	.team-member-inner{
-		opacity:0;
-		transition:opacity 0.3s ease-out;
-		position:absolute;
-		top:0;
-		bottom:0;
-		left:0;
-		right:0;
-		background: rgba(76, 118, 255, 0.7);
-		color:white;
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-		padding:10px;
-		@include breakpoint(large){
-			justify-content:space-between;
-		}
-		.team-member-title{
-			p:last-of-type{
-				margin:$gutter;
-				@include breakpoint(large){
-					margin:0;
-				}
-			}
-		}
-		.team-member-social{
-			margin:0 auto;
-			width: 50%;
-			display:flex;
-			justify-content:space-between;
-			@include breakpoint(large){
-				width: 70%;
-			}
-			a{
-				color:white;
-				background: rgba(0,0,0,0.2);
-				padding:8px 13px;
-				&:nth-of-type(2){
-					padding:8px 18px;
-				}
-			}
-		}
 	}
 	&:hover{
 		.team-member-inner{
@@ -55,6 +23,55 @@
 		}
 		+ .team-member-name{
 			color:$green;
+		}
+	}
+	@include breakpoint(large){
+		width: 100%;
+	}
+}
+
+.team-member-inner{
+	opacity:0;
+	transition:opacity 0.3s ease-out;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background: rgba(76, 118, 255, 0.7);
+	color:white;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	padding:10px;
+	@include breakpoint(large){
+		justify-content:space-between;
+	}
+}
+
+.team-member-title{
+	p:last-of-type{
+		margin:$gutter;
+		@include breakpoint(large){
+			margin:0;
+		}
+	}
+}
+
+.team-member-social{
+	margin:0 auto;
+	width: 50%;
+	display:flex;
+	justify-content:space-between;
+	@include breakpoint(large){
+		width: 70%;
+	}
+	a{
+		color:white;
+		background: rgba(0,0,0,0.2);
+		padding:8px 13px;
+		&:nth-of-type(2){
+			padding:8px 18px;
 		}
 	}
 }

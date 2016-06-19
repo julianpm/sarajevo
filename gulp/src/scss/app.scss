@@ -12,6 +12,7 @@
 @import 'team';
 @import 'funfacts';
 @import 'contact';
+@import 'footer';
 
 
 .text-center{
@@ -27,18 +28,25 @@
 }
 
 .section-padding{
-	padding:5% 0;
+	padding:$gutter * 1.5 0;
+}
+
+.period{
+	color:$blue;
 }
 
 .section-header{
-	margin-bottom:$gutter * 2;
+	margin-bottom:$gutter;
 	p{
-		margin-top:$gutter * 1.5;
+		margin:$gutter * 1.5 0 0 0;
 		@include lato();
 	}
 	img{
 		margin:0 auto;
 		display: block;
+	}
+	@include breakpoint(large){
+		margin-bottom:$gutter * 2;
 	}
 }
 
@@ -61,12 +69,3 @@ footer{
 		}
 	}
 }
-
-.link-list{
-	@include breakpoint(large){
-		column-count:2;
-	}
-}
-
-
-
