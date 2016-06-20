@@ -1,4 +1,8 @@
 
+header{
+	background: rgba(76, 118, 255, 0.1);
+}
+
 .hero{
 	flex-direction:column;
 	@include breakpoint(large){

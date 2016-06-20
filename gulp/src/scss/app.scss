@@ -53,19 +53,3 @@
 section{
 	border:1px solid red;
 }
-
-header{
-	background: rgba(76, 118, 255, 0.1);
-}
-
-footer{
-	background: $black;
-	color:white;
-	a{
-		color:white;
-		transition:0.5s;
-		&:hover{
-			color:$blue;
-		}
-	}
-}

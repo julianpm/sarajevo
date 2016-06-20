@@ -1,6 +1,28 @@
 
-.footer-left, .footer-middle, .footer-right{
-	border:1px solid red;
+footer{
+	background: $black;
+	color:white;
+	a{
+		color:white;
+		transition:0.5s;
+		&:hover{
+			color:$blue;
+		}
+	}
+	.row{
+		display:flex;
+		flex-direction:column;
+		@include breakpoint(large){
+			flex-direction:row;
+		}
+	}
+}
+
+.footer-left, .footer-middle{
+	margin-bottom:$gutter / 2;
+	@include breakpoint(large){
+		margin-bottom:0;
+	}
 }
 
 .footer-left{
@@ -8,6 +30,28 @@
 		@include lato();
 		@include font-size(14);
 		line-height:25px;
+		width: 95%;
+	}
+}
+
+.footer-middle{
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
+	input{
+		border:2px solid white;
+		background: none;
+		border-radius:2px;
+		padding:8px 0;
+		width: 75%;
+		background: url(img/search-arrow.png) no-repeat right;
+		text-indent:10px;
+		background-position: right 10px top 55%;
+	}
+	.footer-middle-inner{
+		p{
+			@include font-size(14);
+		}
 	}
 }
 

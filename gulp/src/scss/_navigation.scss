@@ -1,23 +1,37 @@
 
 // HEADER SECTION
 
-.header-logo, .header-inner{
+.header-inner{
 	justify-content:space-between;
 }
 
-.header-logo p, .header-nav a{
-	padding:20px 0 10px 0;
-}
-
-.header-logo{
-	width: 25%;
+.header-nav-left{
+	border:1px solid green;
+	justify-content:space-between;
+	// width: 30%;
 	p{
-		margin: 0;
+		margin:0;
+		&:first-of-type{
+			@include lato-bold();
+			color:white;
+			@include font-size(24);
+			margin-top:15px;
+		}
+		&:last-of-type{
+			font-style:italic;
+			margin-top:22px;
+			display: none;
+		}
+	}
+	.dash{
+		color:$blue;
+		font-style:normal;
+		margin-right:15px;
 	}
 }
 
-.header-nav{
-	width: 40%;
+.header-nav-right{
+	// width: 40%;
 	li{
 		@include lato();
 	}
@@ -26,6 +40,7 @@
 		display: block;
 		border-top:3px solid transparent;
 		transition:0.5s;
+		padding:20px 0 10px 0;
 		&:hover{
 			border-top:3px solid $blue;
 		}
