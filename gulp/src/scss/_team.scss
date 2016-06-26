@@ -1,6 +1,5 @@
 
 .team-member-wrapper{
-	border:1px solid red;
 	margin:0 0 $gutter 0;
 	&:last-of-type{
 		margin:0;
@@ -8,7 +7,6 @@
 }
 
 .team-member{
-	border:1px solid orange;
 	position:relative;
 	width: 80%;
 	margin:0 auto;

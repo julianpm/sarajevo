@@ -11,14 +11,34 @@ header{
 }
 
 .hero-content{
-	border:1px solid red;
 	color:white;
 	padding:40px;
+	.mobile-header-dash{
+		margin:15px 0;
+		@include breakpoint(large){
+			display: none;
+		}
+	}
 	p{
 		@include lato();
 		@include font-size(20);
-		margin-bottom:0;
+		margin:0;
 		@include lato();
+		img{
+			display: none;
+			&:first-of-type{
+				margin-right:35px;
+			}
+			&:last-of-type{
+				margin-left:35px;
+			}
+		}
+		@include breakpoint(large){
+			margin:20px 0 0 0;
+			img{
+				display: inline-block;
+			}
+		}
 	}
 }
 

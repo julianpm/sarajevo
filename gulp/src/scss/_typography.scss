@@ -6,14 +6,24 @@ body{
 }
 
 h1{
-	@include font-size(70);
+	@include font-size(52);
 	@include lato-bold();
 	line-height:62px;
 	margin:0;
 	&:last-of-type{
 		@include lato-thin();
-		@include font-size(48);
+		@include font-size(34);
 		letter-spacing:1px;
+		margin-top:10px;
+		line-height:45px;
+	}
+	@include breakpoint(large){
+		@include font-size(70);
+		&:last-of-type{
+			@include font-size(48);
+			line-height:62px;
+		}
+
 	}
 }
 
