@@ -8,7 +8,7 @@
 
 .team-member{
 	position:relative;
-	width: 80%;
+	width: 90%;
 	margin:0 auto;
 	img{
 		height:100%;
@@ -42,28 +42,25 @@
 	flex-direction:column;
 	justify-content:center;
 	padding:10px;
-	@include breakpoint(large){
-		justify-content:space-between;
-	}
 }
 
 .team-member-title{
+	p{
+		margin:0;
+	}
 	p:last-of-type{
-		margin:$gutter;
-		@include breakpoint(large){
-			margin:0;
+		margin: 15px $gutter;
+		@include breakpoint(medium){
+			margin:15px 0;
 		}
 	}
 }
 
 .team-member-social{
 	margin:0 auto;
-	width: 50%;
+	width: 150px;
 	display:flex;
 	justify-content:space-between;
-	@include breakpoint(large){
-		width: 70%;
-	}
 	a{
 		color:white;
 		background: rgba(0,0,0,0.2);

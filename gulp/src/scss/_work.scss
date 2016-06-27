@@ -33,9 +33,6 @@
 			}
 		}
 	}
-	@include breakpoint(medium){
-		width: 75%;
-	}
 	@include breakpoint(large){
 		width: 65%;
 	}

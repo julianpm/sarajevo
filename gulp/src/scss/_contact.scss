@@ -51,6 +51,7 @@ form{
 		border-top:0;
 		border-left:0;
 		border-right:0;
+		border-radius:0;
 		border-bottom:2px solid #e0e0e0;
 		padding-bottom:15px;
 	}
@@ -81,6 +82,7 @@ form{
 		margin-top:$gutter;
 		i{
 			color:$blue;
+			margin-right:10px;
 		}
 	}
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -98,15 +100,20 @@ form{
 }
 
 .contact-social{
+	margin:0 auto;
 	justify-content:space-between;
+	@include breakpoint(medium){
+		width: 70%;
+	}
 	@include breakpoint(large){
 		flex-direction:column;
+		width: auto;
 	}
 	a{
 		margin-bottom:$gutter / 3.5;
 		padding:2px 0 2px 5px;
 		color:$light-grey;
-		@include font-size(20);
+		@include font-size(24);
 		transition:0.5s;
 		&:last-of-type{
 			margin-bottom:0;
