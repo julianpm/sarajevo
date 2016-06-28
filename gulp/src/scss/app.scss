@@ -28,7 +28,7 @@
 }
 
 .section-padding{
-	padding:$gutter * 1.5 0;
+	padding:$gutter 0;
 }
 
 .period{
@@ -37,15 +37,4 @@
 
 .section-header{
 	margin-bottom:$gutter;
-	p{
-		margin:$gutter * 1.5 0 0 0;
-		@include lato();
-	}
-	img{
-		margin:0 auto;
-		display: block;
-	}
-	@include breakpoint(large){
-		margin-bottom:$gutter * 2;
-	}
 }

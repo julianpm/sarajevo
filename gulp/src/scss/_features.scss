@@ -6,18 +6,14 @@
 		margin-bottom:0;
 		@include font-size(14);
 	}
-	img{
-		height:100%;
-		// width: 30%;
-	}
 	.flex{
 		margin-bottom:$gutter;
 		&:last-of-type{
 			margin-bottom:0;
 		}
-	}
-	div{
-		// width: 70%;
+		@include breakpoint(large){
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -32,7 +28,9 @@
 
 .features-lower{
 	.features-lower-header{
-		margin:0 0 $gutter * 2 0;
+		@include breakpoint(large){
+			margin:0 0 $gutter * 2 0;
+		}
 	}
 	.features-lower-details-wrapper{
 		flex-direction:column;
@@ -46,6 +44,12 @@
 		padding:5% 0;
 		.flex{
 			transition:0.5s;
+			div{
+				padding:5px 0;
+				@include breakpoint(large){
+					padding:10px 0;
+				}
+			}
 			img{
 				margin-right:12%;
 			}
