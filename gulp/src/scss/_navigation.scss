@@ -2,7 +2,7 @@
 // HEADER SECTION
 
 .header-inner{
-	@include breakpoint(medium){
+	@include breakpoint(large){
 		display:flex;
 		justify-content:space-between;
 	}
@@ -10,7 +10,7 @@
 
 .header-nav-left{
 	display: none;
-	@include breakpoint(medium){
+	@include breakpoint(large){
 		width: 30%;
 		display:flex;
 		justify-content:space-between;
@@ -37,10 +37,12 @@
 
 .header-nav-right{
 	@include breakpoint(medium){
-		width: 50%;
+		width: 70%;
+		margin:0 auto;
 	}
 	@include breakpoint(large){
 		width: 40%;
+		margin:0;
 	}
 	li{
 		@include lato();
